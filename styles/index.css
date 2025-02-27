@@ -1,0 +1,146 @@
+main {}
+main .big_container {}
+main .big_container .row {
+    width: 100%; height: 100vh;
+}
+.inner{
+    width:100vw;
+    height:100vh;
+}
+
+.big_container .row1 {
+    background-color: #F1F1F1; display: flex;
+}
+.big_container .row1 .row1_left_img {
+    width:calc(100% - 35.1562%);
+    position: relative;
+    & img{
+        width:100%; /* 675/1920 */
+        position: absolute; bottom: 0;
+    }
+}
+.big_container .row1 .row1_left_img img {
+
+}
+.big_container .row1 .row1_main{
+    width: 441px;
+    position: absolute; left: 1000px; top:248px;
+}
+.big_container .row1 .small_h {
+    color:#C9C9C9; font-size: 0.9375rem; font-weight: 500;
+}
+.big_container .row1 .s1 {
+    float: left;
+    
+}
+.big_container .row1 .s2 {
+    float: right;
+}
+
+.big_container .row1 .big_h {
+    margin: 10px 0 20px;
+    font-size: 80px; font-weight: 500;
+    letter-spacing: -0.02rem;
+}
+.big_container .row1 .row_nav{
+
+}
+.big_container .row1  .row1_number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.big_container .row1  .row1_number .row1_bar {
+    background-color: #d5d5d5;
+    width: 1px; height: 100px;
+
+}
+
+
+.big_container .row1 .row_nav {
+    right:89px; top:667px;
+    position: fixed;
+}
+.big_container .row1 .row_nav li {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.big_container .row1 .row_nav li:nth-child(4) {
+    margin-bottom: 20px;
+}
+.big_container .row1 .row_nav li:nth-last-child() {
+    margin: 0;
+}
+
+
+
+.big_container .row2 {
+    display: flex;
+}
+.big_container .row2 .row2_left_bg {
+    background-color: #F1F1F1;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big_container .row2 .profile {
+    width: 292px;
+    
+}
+.big_container .row2 img {margin-bottom: 30px;}
+.big_container .row2 .profile .name {
+}
+.big_container .row2 .profile .name .en_name {
+    margin-bottom: 8px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+.big_container .row2 .profile .name .ko_name {
+    font-weight: 800;
+    font-size: 1.875rem;
+    margin-bottom: 8px;
+}
+.big_container .row2 .profile .dob {
+    color: #888888; font-size: 0.8125rem;
+}
+.big_container .row2 .profile .contact {
+    margin:23px 24px 15px 0;
+    text-align: left;
+}
+.big_container .row2 .contact .td_span {
+    font-weight: 500;
+    margin-right: 15px;
+}
+.big_container .row2 .profile .contact tr{
+    display:block;
+    margin-bottom:15px;
+}
+.big_container .row2 .contact td {
+    font-weight: 400; 
+}
+.big_container .row2 .row2_edu .edu_contents{
+    display: flex;
+}
+.big_container .row2 .row2_Quals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: calc((100 / 3) * 2);
+    gap:3%;
+}
+
+
+    /* display: flex;
+    gap: 14%;
+    padding-left: 6%;
+    padding-bottom: 2%; */
+
+.big_container .row2 .row2_bar {
+    height: 90%; width: 1px;
+    background-color: #e1e1e1;
+}
