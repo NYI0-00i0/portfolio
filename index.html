@@ -6,13 +6,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <main>
         <div class="big_container" id="fullpage"><!-- 배경 바는 어떻게 할지 고민해보기!.... -->
-            <div class="row1 row section fp-auto-height" data-anchor="row1"><!-- 1행  메인 소개페이지!-->
+            <div class="row1 row section" data-anchor="row1"><!-- 1행  메인 소개페이지!-->
                 <div class="inner">
                     <div class="row1_left_img mock">
                         <img src="./image/row1_mockup.png" alt=""><!-- 백그라운드 이미지로 해야하는지..! -->
@@ -38,7 +42,7 @@
                         </div>
                 </div>
             </div>
-            <div class="row2 row section fp-auto-height" data-anchor="row2"><!-- 2행 내 프로필 -->
+            <div class="row2 row section" data-anchor="row2"><!-- 2행 내 프로필 -->
                 <div class="inner">
                     <div class="row2_left_bg"><!-- 왼쪽 프로필 -->
                         <img src="./image/row2_img.png" alt="">
@@ -65,7 +69,7 @@
                     <div class="row2_Quals">
                         <div class="row2_left">
                             <div class="row2_edu">
-                                <h2 class="row_h">EDUCATION</h2>
+                                <h2 class="row2_h">EDUCATION</h2>
                                 <div class="edu_contents">
                                     <div class="edu_img">
                                         <img src="./image/row2_edu.png" alt="">
@@ -132,10 +136,10 @@
                         <div class="row2_right">
                             <div class="row2_exp">
                                 <h2 class="row2_h">EXPERIENCE</h2>
+                                <div class="exp_info">
                                 <div class="edu_img">
                                     <img src="./image/row2_exp.png" alt="">
                                 </div>
-                                <div class="exp_info">
                                     <table>
                                         <tr>
                                             <td><span>2024.10 ~ 25.03</span></td>
@@ -161,6 +165,7 @@
                                 </div>
                             </div>
                             <div class="row2_interest">
+                                <h2 class="row2_h">HOBBY & INTEREST</h2>
                                 <div class="int_top">
                                     <p class="int_p int1">매거진 및 컬렉션 구독</p>
                                     <p class="int_p int2">DIY</p>
@@ -177,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row3 row section fp-auto-height" data-anchor="row3"> <!-- 프로젝트 1. 파타고니아 -->
+            <div class="row3 row section" data-anchor="row3"> <!-- 프로젝트 1. 파타고니아 -->
                 <div class="inner">
                     <div class="row3_top top">
                         <div class="row3_prj project">
@@ -195,41 +200,49 @@
                         </div>
                         <h2 class="head_h">PATAGONIA</h2>
                     </div>
-                    <img src="./image/row3_main.png" alt=""> <!-- 이고 백그라운드인지 여쭤보기 -->'
+                    <img src="./image/row3_main.png" alt="">
                     <div class="a_button">
-                        <div class="bk_btn"><a href="#">프로토타입</a></div>
-                        <div class="wh_btn"><a href="#">원본사이트</a></div>
+                        <div class="bk_btn btn"><a href="https://www.figma.com/proto/Wj2Sldq9QIKFzjZKJtGc2S/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A7%81%ED%81%AC?node-id=1-502&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">프로토타입</a></div>
+                        <div class="wh_btn btn"><a href="https://www.patagonia.co.kr/">원본사이트</a></div>
+                        <div class="wh_btn btn"><a href="#">기획서보기</a></div>
                     </div>
                 </div>
             </div>
-            <div class="row4 row"> <!-- 프로젝트 1. 파타고니아 기획서 -->
+<!--             <div class="row4 row section" data-anchor="row4">
                 <div class="inner">
-                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!원 이거 할줄 몰라 --><!-- 그리고 이거 row 5,6 복붙해야해! -->
+                    <div class="circle_container">
+                        <div class="left_circle">
+                            <div class="mini_circle mc1"></div>
+                            <div class="mini_circle mc2"></div>
+                            <div class="mini_circle mc3"></div>
+                        </div>
+                    </div>
                 <div class="left_contents">
-                    <div class="row4_h_sub">
-                        <h3>Main page</h3>
+                    <div class="row4_h_left sub">
+                        <h3 class="sm_h">Mans line</h3>
                         <p>내용을 적어주세요</p>
                     </div>
-                    <div class="row4_h_main_active">
-                        <h3>Main page</h3>
+                    <div class="row4_h_left active">
+                        <h3 class="sm_h">Main page</h3>
                         <p>내용을 적어주세요</p>
                     </div>
-                    <div class="row4_h_sub">
-                        <h3>Main page</h3>
+                    <div class="row4_h_left sub">
+                        <h3 class="sm_h">Detail page</h3>
                         <p>내용을 적어주세요</p>
                     </div>
                 </div>
                 <div class="row4_right">
                     <div class="row4_imgs">
-                        <img src="./image/patagonia_full_main.png" alt="">
+                        <div class="row4_main_img">
+                            <img src="./image/row4_patagonia_main.png" alt="">
+                        </div>
                         <img src="./image/mouse_down.png" alt="" class="mouse_down">
                     </div>
                     <p>내용을 적어주세요</p> 
-                    <button type="button" class="page_next">Page NEXT<img src="./image/arrow right.png" alt=""></button>
                 </div>
                 </div>
-            </div>
-            <div class="row7 row section fp-auto-height" data-anchor="row7"> <!-- 프로젝트 2. 그랑핸드 -->
+            </div> -->
+            <div class="row7 row section " data-anchor="row7"> <!-- 프로젝트 2. 그랑핸드 -->
                 <div class="inner">
                     <div class="row7_top top">
                         <div class="row7_prj project">
@@ -248,36 +261,42 @@
                         <h2 class="head_h">GRANHAND</h2>
                     </div>
                     <div class="row7_imgs">
-                        <img src="./image/row7_front.png" alt="" class="front">
                         <img src="./image/row7_back.png" alt="" class="back">
+                        <img src="./image/row7_front.png" alt="" class="front">
                     </div>
                     <div class="a_button">
-                        <div class="bk_btn"><a href="#">프로토타입</a></div>
-                        <div class="wh_btn"><a href="#">원본사이트</a></div>
+                        <div class="bk_btn btn"><a href="https://www.figma.com/proto/Wj2Sldq9QIKFzjZKJtGc2S/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A7%81%ED%81%AC?node-id=2-45&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=2%3A2">프로토타입</a></div>
+                        <div class="wh_btn btn"><a href="https://granhand.com/">원본사이트</a></div>
+                        <div class="wh_btn btn"><a href="https://www.figma.com/proto/Wj2Sldq9QIKFzjZKJtGc2S/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A7%81%ED%81%AC?node-id=220-27&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=220%3A26">기획서보기</a></div>
                     </div>
                 </div>
             </div>
-            <div class="row8 row "><!-- 프로젝트 2. 그랑핸드 기획서 // 배경 백그라운드 CSS에서 넣기    // 9,10 만들기-->
+<!--             <div class="row8 row section" data-anchor="row8">
                 <div class="inner">
-                    <h2>MAIN PAGE</h2>
-                    <div class="row8_contents">
-                        <div class="content1">
-                            <p><span class="bold">제목</span></p>
-                            <p class="regl">내용을 입력해주세요.</p>
-                        </div>
-                        <div class="content2">
-                            <p><span class="bold">제목</span></p>
-                            <p class="regl">내용을 입력해주세요.</p>
-                        </div>
-                    </div>
+                    <h2 class="main_h">MAIN<br> PAGE</h2>
                     <div class="row8_imgs">
-                        <img src="./image/granhand_full_main.png" alt="">
+                        <div class="row8_contents">
+                            <div class="content1">
+                                <div class="hb">
+                                    <div class="bar"></div>
+                                    <p><span class="bold">제목</span></p>
+                                </div>
+                                <p class="regl">내용을 입력해주세요.</p>
+                            </div>
+                            <div class="content2">
+                                <div class="hb">
+                                    <div class="bar"></div>
+                                    <p><span class="bold">제목</span></p>
+                                </div>
+                                <p class="regl">내용을 입력해주세요.</p>
+                            </div>
+                        </div>
+                        <img src="./image/granhand_full_main.png" alt="" class="main">
                         <img src="./image/mouse_down.png" alt="" class="mouse_down">
                     </div>
-                    <button type="button" class="page_next" >Page NEXT<img src="./image/arrow right.png" alt=""></button>
                 </div>
-            </div>
-            <div class="row11 row section fp-auto-height" data-anchor="row11"><!-- 프로젝트 3. 보그-->
+            </div> -->
+            <div class="row11 row section" data-anchor="row11"><!-- 프로젝트 3. 보그-->
                 <div class="inner">
                     <div class="row11_top top">
                         <div class="row11_prj project">
@@ -296,27 +315,31 @@
                         <h2 class="head_h">VOGUE</h2>
                     </div>
                     <img src="./image/row11_main.png" alt="">
-                    <div class="a_button"><!-- ////////////////////////////////////////////////////////나만 보기 요거 똑같은 버튼 -->
-                        <div class="bk_btn"><a href="#">프로토타입</a></div>
-                        <div class="wh_btn"><a href="#">원본사이트</a></div>
+                    <div class="a_button">
+                        <div class="bk_btn btn"><a href="https://www.figma.com/proto/Wj2Sldq9QIKFzjZKJtGc2S/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A7%81%ED%81%AC?node-id=25-656&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=3%3A2">프로토타입</a></div>
+                        <div class="wh_btn btn"><a href="https://www.vogue.co.kr/">원본사이트</a></div>
+                        <div class="wh_btn btn"><a href="#">기획서보기</a></div>
                     </div>
                 </div>
             </div>
-            <div class="row12 row"><!-- 프로젝트 3. 보그 기획서-->
-                <div class="row12_imgs">
-                    <div class="row12_main_img">
-                        <img src="./image/row12_mookup.png" alt="">
-                        <img src="./image/vogue_full.png" alt=""><!-- ///////////////////////////////////////////////////////////////////요기 어려움/ -->
+<!--             <div class="row12 row section" data-anchor="row12">
+                <div class="inner">
+                    <div class="row12_imgs">
+                        <div class="row12_main_img">
+                            <img src="./image/row12_mookup.png" alt="" class="main">
+                            <div class="full_img">
+                                <img src="./image/vogue_full.png" alt="">
+                            </div>
+                        </div>
+                        <img src="./image/mouse_down.png" alt="" class="mouse_down ">
                     </div>
-                    <img src="./image/mouse_down.png" alt="" class="mouse_down ">
+                    <div class="row12_right_contents">
+                        <p><span class="bold">제목</span></p>
+                        <p class="regl">내용을 입력해주세요.</p>
+                    </div>
                 </div>
-                <div class="row12_right_contents">
-                    <p><span class="bold">제목</span></p>
-                    <p class="regl">내용을 입력해주세요.</p>
-                </div>
-                <button type="button" class="page_next">Page NEXT<img src="./image/arrow right.png" alt=""></button><!-- ////////////여기 복붙! -->
-            </div>
-            <div class="row14 row section fp-auto-height" data-anchor="row14"> <!-- 프로젝트 more -->
+            </div> -->
+            <div class="row14 row section" data-anchor="row14"> <!-- 프로젝트 more -->
                 <div class="inner">
                     <div class="row14_top top">
                         <div class="row14_prj project">
@@ -334,88 +357,126 @@
                         </div>
                     </div>
                     <div class="more_proj">
-                        <div class="background_sq1">
-                            <img src="./image/14more_img.png" alt="">
+                        <div class="background_sq1 sq">
+                            <img src="./image/14more_img2.png" alt="" class="mook">
                             <div class="row14_contents">
                                 <h3 class="row14_h">언리시아</h3>
-                                <p class="regl">내용을 적어주세요.</p>
+                                <p class="regl">일상의 아름다움을 축제처럼 즐길 수 있도록 다양한 비건 뷰티 제품을 제공하는 한국의 화장품 브랜드</p>
                             </div>
-                            <button type="button" class="page_next">NEXT <img src="./image/arrow right.png" alt=""></button>
+                            <div class="a_button button_box2">
+                                <div class="bk_btn btn"><a href="https://www.figma.com/proto/yjtn29usbk1gWWBPjFl8Gl/1?node-id=1-10&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">프로토타입</a></div>
+                                <div class="wh_btn2 btn"><a href="#">기획서보기</a></div>
+                                <div class="wh_btn btn"><a href="https://unleashiacosmetics.com/">원본사이트</a></div>
+                                <button type="button" class="page_next">NEXT <img src="./image/arrow right.png" alt=""></button>
+                            </div>
                         </div>
-                        <div class="background_sq2">
-                            <img src="./image/14more_img.png" alt="">
+                            <div class="background_sq2 sq">
+                            <img src="./image/14more_img1.png" alt="">
                             <div class="row14_contents">
                                 <h3 class="row14_h">윙크</h3>
-                                <p class="regl">내용을 적어주세요.</p>
+                                <p class="regl">온라인과 오프라인 학습의 장점을 결합한 블렌디드 러닝 방식을 사용하는 유아 및 초등학생을 위한 학습 프로그램을 제공하는 교육 브랜드</p>
                             </div>
-                            <button type="button" class="page_next">NEXT <img src="./image/arrow right.png" alt=""></button>
+                            <div class="a_button button_box3">
+                                <div class="bk_btn btn"><a href="https://www.figma.com/proto/XbP7elqsMTa3QNA6Fsh1Hr/%EC%9C%99%ED%81%AC?node-id=125-2&t=jp55cCqvqZhlF1F0-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">프로토타입</a></div>
+                                <div class="wh_btn2 btn"><a href="#">기획서보기</a></div>
+                                <div class="wh_btn btn"><a href="https://www.wink.co.kr/client/desktop">원본사이트</a></div>
+                                <!-- <button type="button" class="page_next">NEXT <img src="./image/arrow right.png" alt=""></button> -->
+                            </div>
                         </div>
-                        <div class="background_sq3">
+<!--                         <div class="background_sq3 sq">
                             <img src="./image/14more_img.png" alt="">
                             <div class="row14_contents">
                                 <h3 class="row14_h">아직 안정함</h3>
                                 <p class="regl">내용을 적어주세요.</p>
                             </div>
-                            <button type="button" class="page_next">NEXT <img src="./image/arrow right.png" alt=""></button>
-                        </div>
+                            <div class="button_box a_button">
+                                <div class="bk_btn btn"><a href="#">프로토타입</a></div>
+                                <div class="wh_btn2 btn"><a href="#">기획서보기</a></div>
+                                <div class="wh_btn btn"><a href="#">원본사이트</a></div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="row15 row section fp-auto-height" data-anchor="row15"><!-- sns 디자인 -->
+            <div class="row15 row section" data-anchor="row15"><!-- sns 디자인 -->
                 <div class="inner">
                     <div class="row15_top top">
                         <div class="catg">
                             <button type="button" class="bk">WEB</button>
                             <button type="button">01</button>
-                            <button type="button" class="active">02</button>
+                            <button type="button">02</button>
                             <button type="button">03</button>
                             <button type="button">MORE</button>
-                            <button type="button" class="bk">SNS</button>
+                            <button type="button" class="active">SNS</button>
                             <button type="button" class="bk">DETAIL</button>
                         </div>
-                        <h2 class="head_h">SNS</h2>
+                        <h2 class="head_h m-0">SNS</h2>
                     </div>
-                    <div class="row15_imgs">
-                        <img src="./image/sns_design1.png" alt="">
-                        <img src="./image/sns_design2.png" alt="">
-                        <img src="./image/sns_design1.png" alt="">
-                        <img src="./image/sns_design2.png" alt="">
+                    <div class="row15_imgs swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design1.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design2.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design3.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design4.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design5.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design6.png" alt="">
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./image/sns_design7.png" alt="">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row16 row section fp-auto-height" data-anchor="row16">
+<!--             <div class="row16 row section" data-anchor="row16">
                 <div class="inner">
-                    <div class="row16_top top">
+                    <div class="row16_top top top2">
                         <div class="catg">
                             <button type="button" class="bk">WEB</button>
                             <button type="button">01</button>
-                            <button type="button" class="active">02</button>
+                            <button type="button">02</button>
                             <button type="button">03</button>
                             <button type="button">MORE</button>
                             <button type="button" class="bk">SNS</button>
-                            <button type="button" class="bk">DETAIL</button>
+                            <button type="button" class="active">DETAIL</button>
                         </div>
-                        <h2 class="head_h">DETAIL</h2>
+                        <h2 class="head_h m-0">DETAIL</h2>
                     </div>
-                    <img src="./image/detail_main.png" alt="" class="detail__main_act">
-                    <div class="row16_contents">
-                        <p><span class="bold">제목</span></p>
-                        <p class="regl">내용을 입력해주세요.</p>
-                    </div>
-                    <div class="row16_imgs">
-                        <img src="./image/detail_2.png" alt="">
-                        <img src="./image/detail_2.png" alt="">
-                        <img src="./image/detail_2.png" alt="">
-                        <img src="./image/detail_2.png" alt="">
+                    <div class="det_container">
+                        <img src="./image/detail_main.png" alt="" class="detail__main_act">
+                        <div class="det_box">
+                            <div class="row16_imgs"> 
+                                <div class="list">
+                                    <ul>
+                                        <li><img src="./image/detail_2.png" alt=""></li>
+                                        <li><img src="./image/detail_2.png" alt=""></li>
+                                        <li><img src="./image/detail_2.png" alt=""></li>
+                                    </ul>
+                                    <button type="button" class="next_btn">NEXT <img src="./image/arrow right.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row17 row">
+            </div> -->
+            <div class="row17 row row17 row section">
                 <p class="thk">THANK YOU</p>
-                <img src="image/row17_qr.png" alt="">
+<!--                 <img src="./image/qrcode.png" alt=""> -->
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
     <script>
         new fullpage('#fullpage', {
@@ -434,5 +495,6 @@
             }
         })
     </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
